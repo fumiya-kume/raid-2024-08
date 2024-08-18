@@ -1,6 +1,8 @@
 package system.kuu.raid.main
 
 import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
@@ -19,7 +21,8 @@ interface MainViewModel {
     val navigationAction: SharedFlow<MainNavigationAction>
 }
 
-class MainViewModelImpl : MainViewModel, ViewModel() {
+@HiltViewModel
+class MainViewModelImpl @Inject constructor() : MainViewModel, ViewModel() {
     override val state: MutableStateFlow<MainState> = MutableStateFlow(MainState(""))
     override val navigationAction: MutableSharedFlow<MainNavigationAction> = MutableSharedFlow()
 }

@@ -8,11 +8,13 @@ import androidx.activity.viewModels
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import dagger.hilt.android.AndroidEntryPoint
 import system.kuu.raid.main.MainScreen
 import system.kuu.raid.main.MainViewModel
 import system.kuu.raid.main.MainViewModelImpl
 import system.kuu.raid.ui.theme.RaidApplicationTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
