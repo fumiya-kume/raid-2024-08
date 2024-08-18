@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import system.kuu.raid.ui.theme.RaidApplicationTheme
 
 @Composable
-fun MainScreen() {
+fun MainScreen(viewModel:MainViewModel) {
     Scaffold { contentPadding ->
         Box(modifier = Modifier.padding(contentPadding)
         ) {

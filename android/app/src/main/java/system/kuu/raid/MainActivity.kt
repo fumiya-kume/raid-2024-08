@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import system.kuu.raid.main.MainScreen
 import system.kuu.raid.main.MainViewModel
+import system.kuu.raid.main.MainViewModelImpl
 import system.kuu.raid.ui.theme.RaidApplicationTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,8 +25,8 @@ class MainActivity : ComponentActivity() {
                     navController = navController
                 ) {
                     composable(NavigationDestination.MAIN) {
-                        val viewModel: MainViewModel by viewModels()
-                        MainScreen()
+                        val viewModel: MainViewModelImpl by viewModels()
+                        MainScreen(viewModel)
                     }
                 }
             }

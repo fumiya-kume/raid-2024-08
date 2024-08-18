@@ -1,5 +1,6 @@
 package system.kuu.raid.main
 
+import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharedFlow
@@ -18,7 +19,7 @@ interface MainViewModel {
     val navigationAction: SharedFlow<MainNavigationAction>
 }
 
-class MainViewModelImpl : MainViewModel {
+class MainViewModelImpl : MainViewModel, ViewModel() {
     override val state: MutableStateFlow<MainState> = MutableStateFlow(MainState(""))
     override val navigationAction: MutableSharedFlow<MainNavigationAction> = MutableSharedFlow()
 }
