@@ -21,6 +21,8 @@
 		D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588DB2C7AFE3F001BD835 /* Repository.swift */; };
 		D86588DE2C7B1927001BD835 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DD2C7B1927001BD835 /* FirebaseFirestore */; };
 		D86588E02C7B1927001BD835 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DF2C7B1927001BD835 /* FirebaseFirestoreCombine-Community */; };
+		D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9352C7B29BC00162EAE /* DebugView.swift */; };
+		D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */; };
 		D97712332C7B096900B63CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97712322C7B096900B63CD9 /* HomeView.swift */; };
 		D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977126E2C7B11CA00B63CD9 /* StandByView.swift */; };
 		FF61CDB82C7B408500CAAE1D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61CDB72C7B408500CAAE1D /* GameView.swift */; };
@@ -33,6 +35,8 @@
 		FF61CDCE2C7B490500CAAE1D /* ViewController+OverlayUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61CDC42C7B490500CAAE1D /* ViewController+OverlayUI.swift */; };
 		FF61CDCF2C7B490500CAAE1D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61CDC22C7B490500CAAE1D /* GradientView.swift */; };
 		FF61CDD02C7B490500CAAE1D /* SIMD+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61CDBF2C7B490500CAAE1D /* SIMD+Helpers.swift */; };
+		D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */; };
+		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,8 @@
 		D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D86588DB2C7AFE3F001BD835 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D8A7E9352C7B29BC00162EAE /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
 		D97712322C7B096900B63CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D977126E2C7B11CA00B63CD9 /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		FF61CDB72C7B408500CAAE1D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,8 @@
 		FF61CDC32C7B490500CAAE1D /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
 		FF61CDC42C7B490500CAAE1D /* ViewController+OverlayUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+OverlayUI.swift"; sourceTree = "<group>"; };
 		FF61CDC62C7B490500CAAE1D /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByViewModel.swift; sourceTree = "<group>"; };
+		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +142,10 @@
 			children = (
 				FF61CDC72C7B490500CAAE1D /* AR */,
 				FF61CDB72C7B408500CAAE1D /* GameView.swift */,
+				D8673AB22C7B3EB300A2A0A3 /* debug */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */,
+				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
 				D86588A62C7A0A8C001BD835 /* fun_appApp.swift */,
 				D97712322C7B096900B63CD9 /* HomeView.swift */,
 				D977126E2C7B11CA00B63CD9 /* StandByView.swift */,
@@ -143,6 +153,7 @@
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
+				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
 			);
 			path = "fun app";
 			sourceTree = "<group>";
@@ -226,6 +237,13 @@
 				FF61CDC62C7B490500CAAE1D /* ARViewController.swift */,
 			);
 			path = AR;
+		D8673AB22C7B3EB300A2A0A3 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
+				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
+			);
+			path = debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +388,9 @@
 			files = (
 				D86588DA2C7AFCC7001BD835 /* ContentViewModel.swift in Sources */,
 				D86588A92C7A0A8C001BD835 /* ContentView.swift in Sources */,
+				D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
+				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
 				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
 				FF61CDC82C7B490500CAAE1D /* UIView+Helpers.swift in Sources */,
 				FF61CDC92C7B490500CAAE1D /* ScreenSpaceComponent.swift in Sources */,
@@ -381,7 +401,9 @@
 				FF61CDCE2C7B490500CAAE1D /* ViewController+OverlayUI.swift in Sources */,
 				FF61CDCF2C7B490500CAAE1D /* GradientView.swift in Sources */,
 				FF61CDD02C7B490500CAAE1D /* SIMD+Helpers.swift in Sources */,
+				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
 				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
+				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
 				FF61CDB82C7B408500CAAE1D /* GameView.swift in Sources */,
 			);

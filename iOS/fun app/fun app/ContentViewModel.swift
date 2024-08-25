@@ -20,7 +20,7 @@ class ContentViewModel: ObservableObject{
     func updateButtonName(){
         buttonText = "Clicked"
         Task{
-            await repository.countUser()
+            await repository.fetchSession()
         }
     }
 }
