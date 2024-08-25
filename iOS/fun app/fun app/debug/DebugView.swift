@@ -31,7 +31,7 @@ struct DebugView: View {
                             StandByView()
                         }label:{
                             Text("Game")
-                        } 
+                        }
                         NavigationLink{
                             FinishedView()
                         }label:{
@@ -52,24 +52,24 @@ struct DebugView: View {
                                 }
                             }
                         }.onDelete(perform: { indexSet in
-                            viewModel.onItemDelete(item: viewModel.itemList[indexSet.first!])
+                            
                         })
-                        NavigationLink("追加"){
-                            AddItemView()
-                        }
-                        
                     }
                     
                     Section(header: Text("User Collection")){
                         ForEach(viewModel.userList){user in
                             Text(user.name)
-                        }
+                        }.onDelete(perform: { indexSet in
+                            
+                        })
                     }
                     
                     Section(header: Text("Session Collection")){
                         ForEach(viewModel.sessionList){user in
                             Text("is ended:" + user.isEnded.description)
-                        }
+                        }.onDelete(perform: { indexSet in
+                            
+                        })
                     }
                 }
                 
