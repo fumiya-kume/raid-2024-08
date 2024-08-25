@@ -123,6 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D83F0F702C7B80ED00D33029 /* standby */ = {
+			isa = PBXGroup;
+			children = (
+				D977126E2C7B11CA00B63CD9 /* StandByView.swift */,
+				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
+			);
+			path = standby;
+			sourceTree = "<group>";
+		};
 		D865889A2C7A0A8C001BD835 = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +139,6 @@
 				D86588B82C7A0A8D001BD835 /* fun appTests */,
 				D86588C22C7A0A8D001BD835 /* fun appUITests */,
 				D86588A42C7A0A8C001BD835 /* Products */,
-				D88576772C7B7DB300AFF4C3 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,15 +155,14 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
+				D83F0F702C7B80ED00D33029 /* standby */,
 				D88576782C7B7E0C00AFF4C3 /* debug */,
 				D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */,
 				D9AD7F3A2C7B596B0006ECA7 /* AR */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */,
-				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
 				D86588A62C7A0A8C001BD835 /* fun_appApp.swift */,
 				D97712322C7B096900B63CD9 /* HomeView.swift */,
-				D977126E2C7B11CA00B63CD9 /* StandByView.swift */,
 				D86588A82C7A0A8C001BD835 /* ContentView.swift */,
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
@@ -415,7 +422,6 @@
 				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
 				D9AD7F452C7B59F40006ECA7 /* ViewController+Gestures.swift in Sources */,
 				D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */,
-				D8673AB42C7B49EF00A2A0A3 /* AddItemView.swift in Sources */,
 				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
 				D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */,
 				D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */,
