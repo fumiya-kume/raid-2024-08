@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "anchor5.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "width" : 10.348000000000001
+  }
+}
