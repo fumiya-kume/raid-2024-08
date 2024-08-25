@@ -52,7 +52,7 @@ struct DebugView: View {
                                 }
                             }
                         }.onDelete(perform: { indexSet in
-                            
+                            viewModel.onItemDelete(item: viewModel.itemList[indexSet.first!])
                         })
                     }
                     
@@ -60,7 +60,7 @@ struct DebugView: View {
                         ForEach(viewModel.userList){user in
                             Text(user.name)
                         }.onDelete(perform: { indexSet in
-                            
+                            viewModel.onUserDelete(user: viewModel.userList[indexSet.first!])
                         })
                     }
                     
