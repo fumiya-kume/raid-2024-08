@@ -74,10 +74,68 @@ class Repository {
             return nil
         }
     }
+    
+    func userListener(listener: @escaping ([User]) -> Void){
+        do {
+            let usersRef =  firestore.collection("users")
+             usersRef.addSnapshotListener{ snapshot, error in
+                 do {
+                     let userList = try snapshot?.documents.map({
+                         try $0.data(as: User.self)
+                     })
+                     listener(userList ?? [])
+                 } catch{
+                     print("エラーだよ")
+                 }
+            }
+        } catch{
+            print("エラーだよ")
+            return
+        }
+    }
+    
+    func itemListener(listener: @escaping ([Item]) -> Void){
+        do {
+            let usersRef =  firestore.collection("items")
+             usersRef.addSnapshotListener{ snapshot, error in
+                 do {
+                     let itemList = try snapshot?.documents.map({
+                         try $0.data(as: Item.self)
+                     })
+                     listener(itemList ?? [])
+                 } catch{
+                     print("エラーだよ")
+                 }
+            }
+        } catch{
+            print("エラーだよ")
+            return
+        }
+    }
+    
+    func sessionListener(listener: @escaping ([Session]) -> Void){
+        do {
+            let usersRef =  firestore.collection("sessions")
+             usersRef.addSnapshotListener{ snapshot, error in
+                 do {
+                     let sessionList = try snapshot?.documents.map({
+                         try $0.data(as: Session.self)
+                     })
+                     listener(sessionList ?? [])
+                 } catch{
+                     print("エラーだよ")
+                 }
+            }
+        } catch{
+            print("エラーだよ")
+            return
+        }
+    }
 }
 
 
-struct Session: Codable {
+struct Session: Codable, Identifiable {
+    @DocumentID var id: String?
     let startTime: Date
     let users: [DocumentReference]
     let isEnded: Bool
@@ -89,13 +147,13 @@ struct Session: Codable {
     }
 }
 
-struct User:Codable {
+struct User:Codable, Identifiable {
     @DocumentID var id: String?
     let name: String
     let items: [DocumentReference]
 }
 
-struct Item:Codable {
+struct Item:Codable, Identifiable {
     @DocumentID var id: String?
     let name: String
     let price: Int
