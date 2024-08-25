@@ -16,14 +16,16 @@ class DebugViewModel: ObservableObject{
     
     init() {
         Task{
-            repository.userListener{
-                self.userList = $0
-            }
-            repository.itemListener{
-                self.itemList = $0
-            }
-            repository.sessionListener{
-                self.sessionList = $0
+            await MainActor.run{
+                repository.userListener{
+                    self.userList = $0
+                }
+                repository.itemListener{
+                    self.itemList = $0
+                }
+                repository.sessionListener{
+                    self.sessionList = $0
+                }
             }
         }
     }
