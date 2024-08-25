@@ -131,6 +131,24 @@ class Repository {
             return
         }
     }
+    
+    func itemDelete(item:Item) {
+        do {
+            let itemRef = firestore.collection("items")
+            if let id = item.id {
+                itemRef.document(id).delete()
+            }
+        }
+    }
+    
+    func userDelete(user: User) {
+        do {
+            let userRef = firestore.collection("users")
+            if let id = user.id {
+                userRef.document(id).delete()
+            }
+        }
+    }
 }
 
 

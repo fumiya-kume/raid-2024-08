@@ -29,6 +29,18 @@ class DebugViewModel: ObservableObject{
             }
         }
     }
+    
+    func onUserDelete(user:User) {
+        repository.userDelete(user: user)
+    }
+    
+    func onItemDelete(item:Item) {
+        repository.itemDelete(item: item)
+    }
+    
+    func onSessionDelete() {
+        
+    }
 }
 
 
