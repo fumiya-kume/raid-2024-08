@@ -54,6 +54,10 @@ struct DebugView: View {
                         }.onDelete(perform: { indexSet in
                             viewModel.onItemDelete(item: viewModel.itemList[indexSet.first!])
                         })
+                        NavigationLink("追加"){
+                            AddItemView()
+                        }
+                        
                     }
                     
                     Section(header: Text("User Collection")){
