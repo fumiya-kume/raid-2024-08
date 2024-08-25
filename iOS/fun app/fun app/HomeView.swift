@@ -21,7 +21,7 @@ struct HomeView: View {
                 .cornerRadius(8)
         }
         .fullScreenCover(isPresented: $standByFlag, content: {
-            StandByView()
+            GameView()
         })
     }
 }

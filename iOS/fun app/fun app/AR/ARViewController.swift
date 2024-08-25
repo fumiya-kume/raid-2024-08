@@ -22,23 +22,9 @@ class ARViewController: UIViewController, ARSessionDelegate {
     var subscription: Cancellable!
     
     // MARK: - View Controller Life Cycle
-
-    init(arView: ARView) {
-        self.arView = arView
-    }
-
-    convenience init() {
-        let arView = ARView(frame: .zero)
-        self.init(arView: arView)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupARView()
         subscription = arView.scene.subscribe(to: SceneEvents.Update.self) { [unowned self] in
             self.updateScene(on: $0)
         }
@@ -65,6 +51,18 @@ class ARViewController: UIViewController, ARSessionDelegate {
         // Prevent the screen from being dimmed to avoid interuppting the AR experience.
         UIApplication.shared.isIdleTimerDisabled = true
         reset()
+    }
+
+    fileprivate func setupARView() {
+        arView = ARView(frame: self.view.bounds)
+        self.view.addSubview(arView)
+
+        NSLayoutConstraint.activate([
+            arView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            arView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            arView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            arView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
     }
     
     func updateScene(on event: SceneEvents.Update) {
