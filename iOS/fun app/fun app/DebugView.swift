@@ -33,7 +33,7 @@ struct DebugView: View {
                             StandByView()
                         }label:{
                             Text("Game")
-                        }
+                        } 
                         NavigationLink{
                             StandByView()
                         }label:{
