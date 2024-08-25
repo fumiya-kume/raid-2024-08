@@ -14,14 +14,14 @@ class StandByViewModel: ObservableObject{
     var repository = Repository()
     
     init() {
-
-    }
-    
-    func fetchStandByUserCount() -> Int {
+        
         Task{
-            self.standByUserCount = await repository.countUser()
+            await MainActor.run{
+                repository.userListener{
+                    self.standByUserCount = $0.count
+                }
+            }
         }
-        return self.standByUserCount
     }
     
     func addUser(name: String){
