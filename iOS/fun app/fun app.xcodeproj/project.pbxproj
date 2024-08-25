@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D83F0F732C7B86A400D33029 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F0F722C7B86A400D33029 /* HomeViewModel.swift */; };
+		D83F0F762C7B875E00D33029 /* FInishedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */; };
 		D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588A62C7A0A8C001BD835 /* fun_appApp.swift */; };
 		D86588AD2C7A0A8C001BD835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86588AC2C7A0A8C001BD835 /* Assets.xcassets */; };
 		D86588B02C7A0A8C001BD835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86588AF2C7A0A8C001BD835 /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		D83F0F722C7B86A400D33029 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FInishedViewModel.swift; sourceTree = "<group>"; };
 		D86588A32C7A0A8C001BD835 /* fun app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86588A62C7A0A8C001BD835 /* fun_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fun_appApp.swift; sourceTree = "<group>"; };
 		D86588AC2C7A0A8C001BD835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
 				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
 				D9AD7F522C7B5AA40006ECA7 /* GameView.swift */,
+				D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */,
 			);
 			path = "fun app";
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			files = (
 				D9AD7F482C7B5A1D0006ECA7 /* SIMD+Helpers.swift in Sources */,
 				D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */,
+				D83F0F762C7B875E00D33029 /* FInishedViewModel.swift in Sources */,
 				D9AD7F422C7B59D20006ECA7 /* StickyNoteEntity.swift in Sources */,
 				D9AD7F4D2C7B5A5B0006ECA7 /* GradientView.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,

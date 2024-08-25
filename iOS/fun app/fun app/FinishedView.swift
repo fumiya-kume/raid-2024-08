@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct FinishedView: View {
+    
+    @ObservedObject var viewModel: FinishedViewModel = FinishedViewModel()
+    
     var body: some View {
         VStack {
             Text("カレー完成！")
-            Text("タイム: 48秒")
+            Text("タイム: \(viewModel.finishedSeconds)秒")
             Image(decorative: "curry")
                  .resizable()
                  .frame(width: 300, height: 150)
