@@ -23,4 +23,10 @@ class StandByViewModel: ObservableObject{
         }
         return self.standByUserCount
     }
+    
+    func addUser(name: String){
+        Task{
+            await repository.addUser(name: name)
+        }
+    }
 }
