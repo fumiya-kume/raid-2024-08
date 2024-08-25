@@ -23,8 +23,19 @@
 		D86588E02C7B1927001BD835 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DF2C7B1927001BD835 /* FirebaseFirestoreCombine-Community */; };
 		D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9352C7B29BC00162EAE /* DebugView.swift */; };
 		D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */; };
+		D95B6A722C7B5D7A0047D052 /* fun-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */; };
 		D97712332C7B096900B63CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97712322C7B096900B63CD9 /* HomeView.swift */; };
 		D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977126E2C7B11CA00B63CD9 /* StandByView.swift */; };
+		D9AD7F3C2C7B597E0006ECA7 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */; };
+		D9AD7F3F2C7B59B00006ECA7 /* ScreenSpaceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */; };
+		D9AD7F422C7B59D20006ECA7 /* StickyNoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */; };
+		D9AD7F452C7B59F40006ECA7 /* ViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */; };
+		D9AD7F482C7B5A1D0006ECA7 /* SIMD+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */; };
+		D9AD7F4A2C7B5A3B0006ECA7 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */; };
+		D9AD7F4D2C7B5A5B0006ECA7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */; };
+		D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */; };
+		D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */; };
+		D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F522C7B5AA40006ECA7 /* GameView.swift */; };
 		D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */; };
 		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
 /* End PBXBuildFile section */
@@ -62,8 +73,19 @@
 		D86588DB2C7AFE3F001BD835 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D8A7E9352C7B29BC00162EAE /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
+		D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fun-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D97712322C7B096900B63CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D977126E2C7B11CA00B63CD9 /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
+		D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSpaceComponent.swift; sourceTree = "<group>"; };
+		D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteEntity.swift; sourceTree = "<group>"; };
+		D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Gestures.swift"; sourceTree = "<group>"; };
+		D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIMD+Helpers.swift"; sourceTree = "<group>"; };
+		D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
+		D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
+		D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+OverlayUI.swift"; sourceTree = "<group>"; };
+		D9AD7F522C7B5AA40006ECA7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByViewModel.swift; sourceTree = "<group>"; };
 		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +142,8 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
+				D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */,
+				D9AD7F3A2C7B596B0006ECA7 /* AR */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */,
 				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
@@ -133,6 +157,7 @@
 				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
 				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
 				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
+				D9AD7F522C7B5AA40006ECA7 /* GameView.swift */,
 			);
 			path = "fun app";
 			sourceTree = "<group>";
@@ -160,6 +185,62 @@
 				D86588C52C7A0A8D001BD835 /* fun_appUITestsLaunchTests.swift */,
 			);
 			path = "fun appUITests";
+			sourceTree = "<group>";
+		};
+		D9AD7F3A2C7B596B0006ECA7 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F4B2C7B5A470006ECA7 /* Views */,
+				D9AD7F462C7B5A060006ECA7 /* Utilities */,
+				D9AD7F432C7B59E10006ECA7 /* Gestures */,
+				D9AD7F402C7B59C30006ECA7 /* Entities */,
+				D9AD7F3D2C7B598F0006ECA7 /* Components */,
+				D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		D9AD7F3D2C7B598F0006ECA7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D9AD7F402C7B59C30006ECA7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D9AD7F432C7B59E10006ECA7 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		D9AD7F462C7B5A060006ECA7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */,
+				D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D9AD7F4B2C7B5A470006ECA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */,
+				D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */,
+				D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95B6A722C7B5D7A0047D052 /* fun-app-Info.plist in Resources */,
 				D86588B02C7A0A8C001BD835 /* Preview Assets.xcassets in Resources */,
 				D86588AD2C7A0A8C001BD835 /* Assets.xcassets in Resources */,
 				D86588D32C7AFA29001BD835 /* GoogleService-Info.plist in Resources */,
@@ -303,15 +385,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86588DA2C7AFCC7001BD835 /* ContentViewModel.swift in Sources */,
+				D9AD7F482C7B5A1D0006ECA7 /* SIMD+Helpers.swift in Sources */,
 				D86588A92C7A0A8C001BD835 /* ContentView.swift in Sources */,
 				D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */,
+				D9AD7F422C7B59D20006ECA7 /* StickyNoteEntity.swift in Sources */,
+				D9AD7F4D2C7B5A5B0006ECA7 /* GradientView.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
+				D9AD7F4A2C7B5A3B0006ECA7 /* UIView+Helpers.swift in Sources */,
+				D9AD7F3F2C7B59B00006ECA7 /* ScreenSpaceComponent.swift in Sources */,
 				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
 				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
 				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
 				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
+				D9AD7F452C7B59F40006ECA7 /* ViewController+Gestures.swift in Sources */,
+				D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */,
 				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
+				D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */,
+				D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
+				D9AD7F3C2C7B597E0006ECA7 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +570,8 @@
 				DEVELOPMENT_TEAM = R5YS6ZB47G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fun-app-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラ使わせて";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,6 +601,8 @@
 				DEVELOPMENT_TEAM = R5YS6ZB47G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "fun-app-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラ使わせて";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
