@@ -10,8 +10,12 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var viewModel = StandByViewModel()
     @State var standByFlag = false
-
+    @State private var name = ""
+    
     var body: some View {
+        TextField("名前", text: $name)
+            .textFieldStyle(.roundedBorder)
+            .padding(.horizontal)
         Button {
             viewModel.addUser(name: "name1") // TODO: フォームからnameを入力する
             standByFlag.toggle()
