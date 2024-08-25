@@ -63,6 +63,17 @@ class Repository {
             return nil
         }
     }
+    
+    func addUser(name:String) async -> User? {
+        do {
+            let usersRef = firestore.collection("users")
+            let user = User(name: name, items: [])
+            try usersRef.addDocument(from: user)
+            return user
+        } catch {
+            return nil
+        }
+    }
 }
 
 
@@ -79,10 +90,13 @@ struct Session: Codable {
 }
 
 struct User:Codable {
-    let items: [Item]
+    @DocumentID var id: String?
+    let name: String
+    let items: [DocumentReference]
 }
 
 struct Item:Codable {
+    @DocumentID var id: String?
     let name: String
     let price: Int
 }
