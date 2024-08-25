@@ -16,6 +16,30 @@ struct DebugView: View {
         NavigationView(content: {
             VStack{
                 List{
+                    Section(header: Text("link集")){
+                        
+                        NavigationLink{
+                            StandByView()
+                        }label:{
+                            Text("Stand by")
+                        }
+                        
+                        NavigationLink{
+                            StandByView()
+                        }label:{
+                            Text("Home")
+                        }
+                        NavigationLink{
+                            StandByView()
+                        }label:{
+                            Text("Game")
+                        }
+                        NavigationLink{
+                            StandByView()
+                        }label:{
+                            Text("Finish")
+                        }
+                    }
                     Section(header: Text("Item Collection")){
                         ForEach(viewModel.itemList){user in
                             Text(user.name)
