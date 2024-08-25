@@ -21,6 +21,8 @@
 		D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588DB2C7AFE3F001BD835 /* Repository.swift */; };
 		D86588DE2C7B1927001BD835 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DD2C7B1927001BD835 /* FirebaseFirestore */; };
 		D86588E02C7B1927001BD835 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DF2C7B1927001BD835 /* FirebaseFirestoreCombine-Community */; };
+		D97712332C7B096900B63CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97712322C7B096900B63CD9 /* HomeView.swift */; };
+		D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977126E2C7B11CA00B63CD9 /* StandByView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D86588DB2C7AFE3F001BD835 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D97712322C7B096900B63CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D977126E2C7B11CA00B63CD9 /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */,
 				D86588A62C7A0A8C001BD835 /* fun_appApp.swift */,
+				D97712322C7B096900B63CD9 /* HomeView.swift */,
+				D977126E2C7B11CA00B63CD9 /* StandByView.swift */,
 				D86588A82C7A0A8C001BD835 /* ContentView.swift */,
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
@@ -287,6 +293,9 @@
 				D86588DA2C7AFCC7001BD835 /* ContentViewModel.swift in Sources */,
 				D86588A92C7A0A8C001BD835 /* ContentView.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
+				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
+				D86588AB2C7A0A8C001BD835 /* Item.swift in Sources */,
+				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
