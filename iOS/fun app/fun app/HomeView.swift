@@ -17,7 +17,7 @@ struct HomeView: View {
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal)
         Button {
-            viewModel.addUser(name: "name1") // TODO: フォームからnameを入力する
+            viewModel.addUser(name: name)
             standByFlag.toggle()
         } label: {
             Text("Stand By")
