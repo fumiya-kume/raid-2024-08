@@ -17,17 +17,15 @@ struct DebugView: View {
             VStack{
                 List{
                     Section(header: Text("link集")){
-                        
+                        NavigationLink{
+                            HomeView()
+                        }label:{
+                            Text("Home")
+                        }
                         NavigationLink{
                             StandByView()
                         }label:{
                             Text("Stand by")
-                        }
-                        
-                        NavigationLink{
-                            StandByView()
-                        }label:{
-                            Text("Home")
                         }
                         NavigationLink{
                             StandByView()
@@ -35,9 +33,9 @@ struct DebugView: View {
                             Text("Game")
                         } 
                         NavigationLink{
-                            StandByView()
+                            FinishedView()
                         }label:{
-                            Text("Finish")
+                            Text("Finishd")
                         }
                     }
                     Section(header: Text("Item Collection")){
