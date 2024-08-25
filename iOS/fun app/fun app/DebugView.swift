@@ -39,9 +39,25 @@ struct DebugView: View {
                         }
                     }
                     Section(header: Text("Item Collection")){
-                        ForEach(viewModel.itemList){user in
-                            Text(user.name)
+                        ForEach(viewModel.itemList){ user in
+                            HStack{
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text(user.name)
+                                        .foregroundColor(.primary)
+                                        .font(.headline)
+                                    HStack(spacing: 0){
+                                        Label(String(user.price), systemImage: "chineseyuanrenminbisign")
+                                            .foregroundColor(.secondary).font(.subheadline)
+                                    }
+                                }
+                            }
+                        }.onDelete(perform: { indexSet in
+                            viewModel.onItemDelete(item: viewModel.itemList[indexSet.first!])
+                        })
+                        NavigationLink("追加"){
+                            AddItemView()
                         }
+                        
                     }
                     
                     Section(header: Text("User Collection")){
