@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var viewModel = StandByViewModel()
+    @StateObject private var viewModel = HomeViewModel()
     @State var standByFlag = false
     @State private var name = ""
     

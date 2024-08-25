@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83F0F732C7B86A400D33029 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F0F722C7B86A400D33029 /* HomeViewModel.swift */; };
 		D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588A62C7A0A8C001BD835 /* fun_appApp.swift */; };
 		D86588AD2C7A0A8C001BD835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86588AC2C7A0A8C001BD835 /* Assets.xcassets */; };
 		D86588B02C7A0A8C001BD835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86588AF2C7A0A8C001BD835 /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D83F0F722C7B86A400D33029 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D86588A32C7A0A8C001BD835 /* fun app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86588A62C7A0A8C001BD835 /* fun_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fun_appApp.swift; sourceTree = "<group>"; };
 		D86588AC2C7A0A8C001BD835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,15 @@
 			path = standby;
 			sourceTree = "<group>";
 		};
+		D83F0F742C7B86E200D33029 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D83F0F722C7B86A400D33029 /* HomeViewModel.swift */,
+				D97712322C7B096900B63CD9 /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		D865889A2C7A0A8C001BD835 = {
 			isa = PBXGroup;
 			children = (
@@ -151,13 +162,13 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
+				D83F0F742C7B86E200D33029 /* home */,
 				D83F0F702C7B80ED00D33029 /* standby */,
 				D88576782C7B7E0C00AFF4C3 /* debug */,
 				D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */,
 				D9AD7F3A2C7B596B0006ECA7 /* AR */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588A62C7A0A8C001BD835 /* fun_appApp.swift */,
-				D97712322C7B096900B63CD9 /* HomeView.swift */,
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
@@ -416,6 +427,7 @@
 				D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */,
 				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
 				D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */,
+				D83F0F732C7B86A400D33029 /* HomeViewModel.swift in Sources */,
 				D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */,
 				D885767B2C7B7E4500AFF4C3 /* AddItemView.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
