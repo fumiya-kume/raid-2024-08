@@ -120,6 +120,7 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
+				D8673AB22C7B3EB300A2A0A3 /* debug */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588D92C7AFCC7001BD835 /* ContentViewModel.swift */,
 				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
@@ -130,8 +131,6 @@
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
-				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
-				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
 				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
 			);
 			path = "fun app";
@@ -160,6 +159,15 @@
 				D86588C52C7A0A8D001BD835 /* fun_appUITestsLaunchTests.swift */,
 			);
 			path = "fun appUITests";
+			sourceTree = "<group>";
+		};
+		D8673AB22C7B3EB300A2A0A3 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
+				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
+			);
+			path = debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
