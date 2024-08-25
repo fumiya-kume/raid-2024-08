@@ -9,8 +9,18 @@ import Foundation
 
 class ContentViewModel: ObservableObject{
     @Published var buttonText:String = "Click me"
+    @Published var session: Session? = nil
     
-    func updateButtonName() {
+    var repository = Repository()
+    
+    init() {
+
+    }
+    
+    func updateButtonName(){
         buttonText = "Clicked"
+        Task{
+            await repository.countUser()
+        }
     }
 }
