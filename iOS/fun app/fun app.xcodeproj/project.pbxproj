@@ -26,6 +26,7 @@
 		D97712332C7B096900B63CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97712322C7B096900B63CD9 /* HomeView.swift */; };
 		D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977126E2C7B11CA00B63CD9 /* StandByView.swift */; };
 		D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */; };
+		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D97712322C7B096900B63CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D977126E2C7B11CA00B63CD9 /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByViewModel.swift; sourceTree = "<group>"; };
+		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
 				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
 				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
+				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
 			);
 			path = "fun app";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
 				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
 				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
+				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
 				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
 				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
