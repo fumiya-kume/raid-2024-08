@@ -40,6 +40,7 @@
 		D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F522C7B5AA40006ECA7 /* GameView.swift */; };
 		D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */; };
 		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
+		FFC3EAFA2C7F512D008D4BC3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		D9AD7F522C7B5AA40006ECA7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByViewModel.swift; sourceTree = "<group>"; };
 		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
+		FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
+				FFC3EAF82C7F511B008D4BC3 /* Game */,
 				D83F0F742C7B86E200D33029 /* home */,
 				D83F0F702C7B80ED00D33029 /* standby */,
 				D88576782C7B7E0C00AFF4C3 /* debug */,
@@ -175,7 +178,6 @@
 				D86588AE2C7A0A8C001BD835 /* Preview Content */,
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
 				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
-				D9AD7F522C7B5AA40006ECA7 /* GameView.swift */,
 				D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */,
 			);
 			path = "fun app";
@@ -271,6 +273,15 @@
 				D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FFC3EAF82C7F511B008D4BC3 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */,
+				D9AD7F522C7B5AA40006ECA7 /* GameView.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +434,7 @@
 				D9AD7F4A2C7B5A3B0006ECA7 /* UIView+Helpers.swift in Sources */,
 				D9AD7F3F2C7B59B00006ECA7 /* ScreenSpaceComponent.swift in Sources */,
 				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
+				FFC3EAFA2C7F512D008D4BC3 /* GameViewModel.swift in Sources */,
 				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
 				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
 				D885767C2C7B7E4500AFF4C3 /* AddItemViewModel.swift in Sources */,
@@ -599,7 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fun app/Preview Content\"";
-				DEVELOPMENT_TEAM = R5YS6ZB47G;
+				DEVELOPMENT_TEAM = 679U29FZ6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "fun-app-Info.plist";
@@ -630,7 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fun app/Preview Content\"";
-				DEVELOPMENT_TEAM = R5YS6ZB47G;
+				DEVELOPMENT_TEAM = 679U29FZ6S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "fun-app-Info.plist";
