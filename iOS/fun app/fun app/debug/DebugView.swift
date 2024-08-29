@@ -70,7 +70,6 @@ struct DebugView: View {
                     
                     Section(header: Text("Session Collection")){
                         ForEach(viewModel.sessionList){user in
-                            Text("is ended:" + user.isEnded.description)
                         }.onDelete(perform: { indexSet in
                             
                         })

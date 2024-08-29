@@ -70,6 +70,25 @@ class Repository {
         }
     }
     
+    func gameStateListener(listener: @escaping ([GameState]) -> Void){
+        let usersRef =  firestore.collection("sessions")
+        usersRef.addSnapshotListener{ snapshot, error in
+            do {
+                if let snapshot = snapshot {
+                    let sessionList = try snapshot.documents.map({ document in
+                        try document.data(as: Session.self)
+                    })
+                    let gameState = sessionList.map({ session in
+                        GameState(rawValue: session.state)
+                    }).filter { $0 != nil }.compactMap { $0 }
+                    listener(gameState)
+                }
+            } catch{
+                print("エラーだよ")
+            }
+        }
+    }
+    
     func itemDelete(item:Item) {
         do {
             let itemRef = firestore.collection("items")
@@ -126,6 +145,12 @@ class Repository {
     }
 }
 
+
+enum GameState:String {
+    case Ready = "ready"
+    case Game = "game"
+    case Result = "result"
+}
 
 struct Session: Codable, Identifiable {
     @DocumentID var id: String?
