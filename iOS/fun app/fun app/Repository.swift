@@ -132,7 +132,7 @@ class Repository {
         do {
             let session = try await firestore.collection("sessions").getDocuments().documents.first
             if let session = session {
-                let document = try firestore.collection("sessions").document(session.documentID)
+                let document = firestore.collection("sessions").document(session.documentID)
                 try await document.setData(session.data(), merge: true)
             }
         } catch {
