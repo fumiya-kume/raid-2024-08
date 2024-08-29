@@ -29,10 +29,6 @@ class Repository {
         }
     }
     
-    func fetchSession() async -> Session? {
-        return await sessionList().first
-    }
-    
     func addUser(name:String) async -> User? {
         do {
             let usersRef = firestore.collection("users")
