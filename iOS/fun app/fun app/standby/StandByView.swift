@@ -18,6 +18,7 @@ struct StandByView: View {
                     presentationMode.wrappedValue.dismiss()
                 })
                 Text("現在　\(viewModel.standByUserCount)人待機中...")
+            
                 NavigationLink("Start!", destination: GameView())
                     .padding(.bottom, 12)
             }.padding()
