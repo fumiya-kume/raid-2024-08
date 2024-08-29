@@ -21,11 +21,13 @@ struct StandByView: View {
                 NavigationLink("Start!", destination: GameView())
                     .padding(.bottom, 12)
             }.padding()
-            List{
-                Section(header: Text("待機中のプレイヤー").font(.headline)){
-                    ForEach(viewModel.userList){user in
-                        Text(user.name)
-                    }
+            ForEach(viewModel.userList){ user in
+                ZStack{
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .padding(.horizontal, 18)
+                        .foregroundStyle(RadialGradient(colors: [.accentColor,.blue], center: .leading, startRadius: 0, endRadius: 30))
+                        .opacity(0.7)
+                    Text(user.name)
                 }
             }
         }
