@@ -14,7 +14,6 @@ class Repository {
     
     func countUser() async -> Int {
         do {
-            let result = try await firestore.collection("sessions").getDocuments()
             let documentsRef = try await firestore.collection("users").getDocuments()
             let count = documentsRef.count
             print(count)
@@ -25,16 +24,7 @@ class Repository {
     }
     
     func fetchStartTime() async -> Date? {
-        do {
-            let sessionsRef = try await firestore.collection("sessions").getDocuments()
-            let session = try sessionsRef.documents.map{
-                try $0.data(as: Session.self)
-            }.first
-            return session?.startTime
-        } catch {
-            print(error)
-            return nil
-        }
+        return await sessionList().first?.startTime
     }
     
     func fetchIsEnd() async -> Bool? {
@@ -51,17 +41,7 @@ class Repository {
     }
     
     func fetchSession() async -> Session? {
-        do {
-            let sessionsRef = try await firestore.collection("sessions").getDocuments()
-            let session = try sessionsRef.documents.map{
-                try $0.data(as: Session.self)
-            }.first
-            print(session)
-            return nil
-        } catch {
-            print(error)
-            return nil
-        }
+        return await sessionList().first
     }
     
     func addUser(name:String) async -> User? {
@@ -78,15 +58,15 @@ class Repository {
     func userListener(listener: @escaping ([User]) -> Void){
         do {
             let usersRef =  firestore.collection("users")
-             usersRef.addSnapshotListener{ snapshot, error in
-                 do {
-                     let userList = try snapshot?.documents.map({
-                         try $0.data(as: User.self)
-                     })
-                     listener(userList ?? [])
-                 } catch{
-                     print("エラーだよ")
-                 }
+            usersRef.addSnapshotListener{ snapshot, error in
+                do {
+                    let userList = try snapshot?.documents.map({
+                        try $0.data(as: User.self)
+                    })
+                    listener(userList ?? [])
+                } catch{
+                    print("エラーだよ")
+                }
             }
         } catch{
             print("エラーだよ")
@@ -97,15 +77,15 @@ class Repository {
     func itemListener(listener: @escaping ([Item]) -> Void){
         do {
             let usersRef =  firestore.collection("items")
-             usersRef.addSnapshotListener{ snapshot, error in
-                 do {
-                     let itemList = try snapshot?.documents.map({
-                         try $0.data(as: Item.self)
-                     })
-                     listener(itemList ?? [])
-                 } catch{
-                     print("エラーだよ")
-                 }
+            usersRef.addSnapshotListener{ snapshot, error in
+                do {
+                    let itemList = try snapshot?.documents.map({
+                        try $0.data(as: Item.self)
+                    })
+                    listener(itemList ?? [])
+                } catch{
+                    print("エラーだよ")
+                }
             }
         } catch{
             print("エラーだよ")
@@ -116,15 +96,15 @@ class Repository {
     func sessionListener(listener: @escaping ([Session]) -> Void){
         do {
             let usersRef =  firestore.collection("sessions")
-             usersRef.addSnapshotListener{ snapshot, error in
-                 do {
-                     let sessionList = try snapshot?.documents.map({
-                         try $0.data(as: Session.self)
-                     })
-                     listener(sessionList ?? [])
-                 } catch{
-                     print("エラーだよ")
-                 }
+            usersRef.addSnapshotListener{ snapshot, error in
+                do {
+                    let sessionList = try snapshot?.documents.map({
+                        try $0.data(as: Session.self)
+                    })
+                    listener(sessionList ?? [])
+                } catch{
+                    print("エラーだよ")
+                }
             }
         } catch{
             print("エラーだよ")
@@ -157,6 +137,17 @@ class Repository {
             try itemRef.addDocument(from: item)
         } catch{
             print("エラーだよ")
+        }
+    }
+    
+    private func sessionList() async -> [Session] {
+        do {
+            let sessionRef = try await firestore.collection("sessions").getDocuments()
+            return try sessionRef.documents.map{
+                try $0.data(as: Session.self)
+            }
+        } catch {
+            return []
         }
     }
 }
