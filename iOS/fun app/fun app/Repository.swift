@@ -111,6 +111,21 @@ class Repository {
         }
     }
     
+    func gameStop() async {
+        do {
+            let sessionRef = firestore.collection("sessions")
+            let session = try await sessionRef.getDocuments().documents.first
+            if let session = session {
+                let sessionId = try await sessionRef.getDocuments().documents.first?.reference
+                if let sessionId = sessionId {
+                    try await firestore.collection("sessions").document(sessionId.documentID).updateData(["is_end": true])
+                }
+            }
+        } catch {
+            
+        }
+    }
+    
     private func sessionList() async -> [Session] {
         do {
             let sessionRef = try await firestore.collection("sessions").getDocuments()
