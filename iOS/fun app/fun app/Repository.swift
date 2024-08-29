@@ -16,19 +16,6 @@ class Repository {
         return await sessionList().first?.startTime
     }
     
-    func fetchIsEnd() async -> Bool? {
-        do {
-            let sessionsRef = try await firestore.collection("sessions").getDocuments()
-            let session = try sessionsRef.documents.map{
-                try $0.data(as: Session.self)
-            }.first
-            return session?.isEnded
-        } catch {
-            print(error)
-            return nil
-        }
-    }
-    
     func addUser(name:String) async -> User? {
         do {
             let usersRef = firestore.collection("users")
@@ -143,11 +130,11 @@ struct Session: Codable, Identifiable {
     @DocumentID var id: String?
     let startTime: Date
     let users: [DocumentReference]
-    let isEnded: Bool
+    let state: String
     
     enum CodingKeys: String, CodingKey {
         case startTime = "start_time"
-        case isEnded = "is_end"
+        case state = "state"
         case users = "users"
     }
 }
