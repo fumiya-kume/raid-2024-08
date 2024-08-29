@@ -89,6 +89,13 @@ class Repository {
         }
     }
     
+    func setGameState(gameState:GameState) async {
+        if var session = await sessionList().first{
+            session.state = gameState.rawValue
+            await updateSession(session: session)
+        }
+    }
+    
     func itemDelete(item:Item) {
         do {
             let itemRef = firestore.collection("items")
@@ -156,7 +163,7 @@ struct Session: Codable, Identifiable {
     @DocumentID var id: String?
     let startTime: Date
     let users: [DocumentReference]
-    let state: String
+    var state: String
     
     enum CodingKeys: String, CodingKey {
         case startTime = "start_time"
