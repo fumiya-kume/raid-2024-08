@@ -12,17 +12,6 @@ import Combine
 class Repository {
     private let firestore = Firestore.firestore()
     
-    func countUser() async -> Int {
-        do {
-            let documentsRef = try await firestore.collection("users").getDocuments()
-            let count = documentsRef.count
-            print(count)
-            return count
-        } catch {
-            return -1
-        }
-    }
-    
     func fetchStartTime() async -> Date? {
         return await sessionList().first?.startTime
     }

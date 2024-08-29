@@ -18,8 +18,8 @@ class StandByViewModel: ObservableObject{
         Task{
             await MainActor.run{
                 repository.userListener{
-                    self.standByUserCount = $0.count
                     self.userList = $0
+                    self.standByUserCount = $0.count
                 }
             }
         }
