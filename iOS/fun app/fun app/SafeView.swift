@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct SafeView: View {
+    @Binding var isActive: Bool
+
     var body: some View {
         Text("Safe")
+        Button(action: {
+            isActive = false
+        }) {
+            Image("next turn")
+        }
     }
 }
 
 #Preview {
-    SafeView()
+    SafeView(isActive: .constant(true))
 }

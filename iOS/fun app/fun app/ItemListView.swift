@@ -28,8 +28,6 @@ struct ItemListView: View {
                     VStack{
                         Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit)
                         Text(item.name).font(.caption).lineLimit(1).allowsTightening(true)
-                    }.onTapGesture {
-                        
                     }
                     .onTapGesture {
                         showModalSheet = true
@@ -39,10 +37,16 @@ struct ItemListView: View {
                             Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit).padding()
                             Text(item.name)
                             Button("購入！"){
-                                
+                                viewModel.onItemSelect(item: item)
                             }
                         }).presentationDetents([.medium])
                     })
+                    .fullScreenCover(isPresented: $viewModel.isGameOver) {
+                        GameOverView()
+                    }
+                    .fullScreenCover(isPresented: $viewModel.isSafe) {
+                        SafeView(isActive: $viewModel.isSafe)
+                    }
                 }
             })
         }.padding()
@@ -52,4 +56,3 @@ struct ItemListView: View {
 #Preview {
     ItemListView()
 }
-

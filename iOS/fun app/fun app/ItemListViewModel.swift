@@ -10,6 +10,10 @@ import Foundation
 class ItemListViewModel: ObservableObject{
     @Published var items: [Item] = []
     @Published var selecteditems: [Item] = []
+    @Published var totalPrice: Int = 0
+    @Published var limitPrice: Int = 1000000
+    @Published var isGameOver: Bool = false
+    @Published var isSafe: Bool = false
     
     init() {
         self.items = Repository().loadItemData()
@@ -17,6 +21,14 @@ class ItemListViewModel: ObservableObject{
     
     func onItemSelect(item: Item) {
         self.selecteditems.append(item)
+        
+        self.totalPrice = selecteditems.reduce(0) { (sum, item) in
+            sum + item.price
+        }
+        print(totalPrice)
+        
+        self.isGameOver = totalPrice > limitPrice
+        self.isSafe = !self.isGameOver
     }
 }
 
