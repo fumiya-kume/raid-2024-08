@@ -18,7 +18,10 @@ struct ItemListView: View {
     var body: some View {
         VStack{
             Text("予算")
-            Text("100万円！")
+                .font(.system(size: 20))
+            Text("\(String.localizedStringWithFormat("%d", viewModel.limitPrice))円")
+                .font(.system(size: 35))
+                .fontWeight(.bold)
         }
         ScrollView{
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 80, maximum: 200))], content: {
