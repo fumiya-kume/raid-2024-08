@@ -13,13 +13,12 @@ struct GameOverView: View {
     var body: some View {
         ZStack{
             Image("game over").resizable().aspectRatio(contentMode: .fit).padding()
-            Image("home").resizable().aspectRatio(contentMode: .fit).padding(42)
+            NavigationLink(destination: TopView()) {
+                Image("home").resizable().aspectRatio(contentMode: .fit)
+                    .frame(alignment: .center).padding()
+            }
         }
         .background(.black)
-        .onTapGesture {
-            self.presentation.wrappedValue.dismiss()
-            self.presentation.wrappedValue.dismiss()
-        }
     }
 }
 
