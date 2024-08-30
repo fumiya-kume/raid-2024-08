@@ -23,7 +23,7 @@ struct DebugView: View {
                             Text("Top")
                         }
                         NavigationLink{
-                            SafeView()
+                            SafeView(isActive: .constant(true))
                         }label:{
                             Text("Safe")
                         }

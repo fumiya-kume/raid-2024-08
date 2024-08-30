@@ -19,7 +19,7 @@ class ItemListViewModel: ObservableObject{
         self.items = Repository().loadItemData()
     }
     
-    func onItemSelect(item: Item) -> Bool {
+    func onItemSelect(item: Item) {
         self.selecteditems.append(item)
         
         self.totalPrice = selecteditems.reduce(0) { (sum, item) in
@@ -27,7 +27,8 @@ class ItemListViewModel: ObservableObject{
         }
         print(totalPrice)
         
-        return(totalPrice > limitPrice)
+        self.isGameOver = totalPrice > limitPrice
+        self.isSafe = !self.isGameOver
     }
 }
 

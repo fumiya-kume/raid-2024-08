@@ -21,9 +21,7 @@ struct ItemListView: View {
                     }
                 }){ item in
                     Button(action: {
-                        let result = viewModel.onItemSelect(item: item)
-                        viewModel.isGameOver = result
-                        viewModel.isSafe = !result
+                        viewModel.onItemSelect(item: item)
                     }) {
                         Text(item.name) // itemの表示内容に応じて変更
                     }
@@ -34,7 +32,7 @@ struct ItemListView: View {
             GameOverView()
         }
         .fullScreenCover(isPresented: $viewModel.isSafe) {
-            SafeView()
+            SafeView(isActive: $viewModel.isSafe)
         }
     }
 }
