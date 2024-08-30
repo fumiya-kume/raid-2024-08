@@ -25,7 +25,7 @@ struct ItemListView: View {
         }
         ScrollView{
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 80, maximum: 200))], content: {
-                ForEach(viewModel.items.filter{ item in
+                ForEach(viewModel.items.shuffled().filter{ item in
                     !viewModel.selecteditems.contains{
                         $0.id == item.id
                     }
