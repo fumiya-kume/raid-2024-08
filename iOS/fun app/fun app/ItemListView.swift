@@ -18,6 +18,9 @@ struct ItemListView: View {
                     $0.id == item.id
                 }){
                     Text(item.name)
+                        .onTapGesture {
+                            viewModel.onItemSelect(item: item)
+                        }
                 }
             }
         }

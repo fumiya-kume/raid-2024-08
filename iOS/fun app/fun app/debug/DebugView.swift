@@ -22,6 +22,11 @@ struct DebugView: View {
                         }label:{
                             Text("Finishd")
                         }
+                        NavigationLink{
+                            ItemListView()
+                        }label:{
+                            Text("Item List")
+                        }
                     }
                     
                 }

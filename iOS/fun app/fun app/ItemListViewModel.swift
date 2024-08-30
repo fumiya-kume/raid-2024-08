@@ -12,7 +12,11 @@ class ItemListViewModel: ObservableObject{
     @Published var selecteditems: [Item] = []
     
     init() {
+        self.items = Repository().loadItemData()
+    }
     
+    func onItemSelect(item: Item) {
+        self.selecteditems.append(item)
     }
 }
 
