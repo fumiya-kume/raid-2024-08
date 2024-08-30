@@ -9,7 +9,12 @@ import SwiftUI
 
 struct TopView: View {
     var body: some View {
-        Text("Top")
+        Button {
+            print()
+        } label: {
+            Text("スタート！").frame(width: 320, height: 200).foregroundStyle(.black)
+        }
+        .buttonStyle(.glassmorphism)
     }
 }
 
