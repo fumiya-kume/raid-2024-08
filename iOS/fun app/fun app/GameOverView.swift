@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct GameOverView: View {
+    @Environment(\.presentationMode) var presentation
+    
     var body: some View {
-        Text("GameOver")
+        ZStack{
+            Image("game over").resizable().aspectRatio(contentMode: .fit).padding()
+            Image("home").resizable().aspectRatio(contentMode: .fit).padding(42)
+        }
+        .background(.black)
+        .onTapGesture {
+            self.presentation.wrappedValue.dismiss()
+            self.presentation.wrappedValue.dismiss()
+        }
     }
 }
 
