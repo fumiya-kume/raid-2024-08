@@ -21,7 +21,7 @@ class ItemListViewModel: ObservableObject{
     
     func onItemSelect(item: Item) {
         self.selecteditems.append(item)
-        
+        print(item.name, "購入！")
         self.totalPrice = selecteditems.reduce(0) { (sum, item) in
             sum + item.price
         }
