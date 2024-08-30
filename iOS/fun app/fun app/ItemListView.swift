@@ -12,7 +12,10 @@ struct ItemListView: View {
     @ObservedObject var viewModel: ItemListViewModel = ItemListViewModel()
     
     var body: some View {
-        Text("目標: 100万円！")
+        VStack{
+            Text("予算")
+            Text("100万円！")
+        }
         ScrollView{
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 80, maximum: 200))], content: {
                 ForEach(viewModel.items.filter{ item in
@@ -26,7 +29,7 @@ struct ItemListView: View {
                     }
                 }
             })
-        }
+        }.padding()
     }
 }
 
