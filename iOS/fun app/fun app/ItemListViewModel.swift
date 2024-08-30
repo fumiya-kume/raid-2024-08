@@ -11,7 +11,7 @@ class ItemListViewModel: ObservableObject{
     @Published var items: [Item] = []
     @Published var selecteditems: [Item] = []
     @Published var totalPrice: Int = 0
-    @Published var limitPrice: Int = 1000000
+    @Published var limitPrice: Int = 100000
     @Published var isGameOver: Bool = false
     @Published var isSafe: Bool = false
     
