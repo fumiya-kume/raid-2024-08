@@ -20,10 +20,10 @@
 		D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588DB2C7AFE3F001BD835 /* Repository.swift */; };
 		D86588DE2C7B1927001BD835 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DD2C7B1927001BD835 /* FirebaseFirestore */; };
 		D86588E02C7B1927001BD835 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D86588DF2C7B1927001BD835 /* FirebaseFirestoreCombine-Community */; };
-		D885767B2C7B7E4500AFF4C3 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88576792C7B7E4500AFF4C3 /* AddItemView.swift */; };
-		D885767C2C7B7E4500AFF4C3 /* AddItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D885767A2C7B7E4500AFF4C3 /* AddItemViewModel.swift */; };
 		D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9352C7B29BC00162EAE /* DebugView.swift */; };
 		D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */; };
+		D8F89CDA2C8235E6002F9DB3 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F89CD92C8235E6002F9DB3 /* ItemListView.swift */; };
+		D8F89CDC2C8235F4002F9DB3 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F89CDB2C8235F4002F9DB3 /* ItemListViewModel.swift */; };
 		D95B6A722C7B5D7A0047D052 /* fun-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */; };
 		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
 /* End PBXBuildFile section */
@@ -58,10 +58,10 @@
 		D86588C52C7A0A8D001BD835 /* fun_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fun_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D86588DB2C7AFE3F001BD835 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		D88576792C7B7E4500AFF4C3 /* AddItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemView.swift; path = "fun app/AddItemView.swift"; sourceTree = SOURCE_ROOT; };
-		D885767A2C7B7E4500AFF4C3 /* AddItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemViewModel.swift; path = "fun app/AddItemViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		D8A7E9352C7B29BC00162EAE /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
+		D8F89CD92C8235E6002F9DB3 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		D8F89CDB2C8235F4002F9DB3 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
 		D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fun-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +127,8 @@
 				D86588DB2C7AFE3F001BD835 /* Repository.swift */,
 				D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */,
 				D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */,
+				D8F89CD92C8235E6002F9DB3 /* ItemListView.swift */,
+				D8F89CDB2C8235F4002F9DB3 /* ItemListViewModel.swift */,
 			);
 			path = "fun app";
 			sourceTree = "<group>";
@@ -159,8 +161,6 @@
 		D88576782C7B7E0C00AFF4C3 /* debug */ = {
 			isa = PBXGroup;
 			children = (
-				D88576792C7B7E4500AFF4C3 /* AddItemView.swift */,
-				D885767A2C7B7E4500AFF4C3 /* AddItemViewModel.swift */,
 				D8A7E9352C7B29BC00162EAE /* DebugView.swift */,
 				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
 			);
@@ -309,12 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */,
+				D8F89CDC2C8235F4002F9DB3 /* ItemListViewModel.swift in Sources */,
 				D83F0F762C7B875E00D33029 /* FInishedViewModel.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
+				D8F89CDA2C8235E6002F9DB3 /* ItemListView.swift in Sources */,
 				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
 				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
-				D885767C2C7B7E4500AFF4C3 /* AddItemViewModel.swift in Sources */,
-				D885767B2C7B7E4500AFF4C3 /* AddItemView.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
