@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D83F0F732C7B86A400D33029 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F0F722C7B86A400D33029 /* HomeViewModel.swift */; };
 		D83F0F762C7B875E00D33029 /* FInishedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */; };
 		D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86588A62C7A0A8C001BD835 /* fun_appApp.swift */; };
 		D86588AD2C7A0A8C001BD835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86588AC2C7A0A8C001BD835 /* Assets.xcassets */; };
@@ -26,21 +25,7 @@
 		D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9352C7B29BC00162EAE /* DebugView.swift */; };
 		D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */; };
 		D95B6A722C7B5D7A0047D052 /* fun-app-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */; };
-		D97712332C7B096900B63CD9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97712322C7B096900B63CD9 /* HomeView.swift */; };
-		D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977126E2C7B11CA00B63CD9 /* StandByView.swift */; };
-		D9AD7F3C2C7B597E0006ECA7 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */; };
-		D9AD7F3F2C7B59B00006ECA7 /* ScreenSpaceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */; };
-		D9AD7F422C7B59D20006ECA7 /* StickyNoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */; };
-		D9AD7F452C7B59F40006ECA7 /* ViewController+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */; };
-		D9AD7F482C7B5A1D0006ECA7 /* SIMD+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */; };
-		D9AD7F4A2C7B5A3B0006ECA7 /* UIView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */; };
-		D9AD7F4D2C7B5A5B0006ECA7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */; };
-		D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */; };
-		D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */; };
-		D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD7F522C7B5AA40006ECA7 /* GameView.swift */; };
-		D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */; };
 		D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */; };
-		FFC3EAFA2C7F512D008D4BC3 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D83F0F722C7B86A400D33029 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D83F0F752C7B875E00D33029 /* FInishedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FInishedViewModel.swift; sourceTree = "<group>"; };
 		D86588A32C7A0A8C001BD835 /* fun app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86588A62C7A0A8C001BD835 /* fun_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fun_appApp.swift; sourceTree = "<group>"; };
@@ -79,21 +63,7 @@
 		D8A7E9352C7B29BC00162EAE /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
 		D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fun-app-Info.plist"; sourceTree = SOURCE_ROOT; };
-		D97712322C7B096900B63CD9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		D977126E2C7B11CA00B63CD9 /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
-		D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSpaceComponent.swift; sourceTree = "<group>"; };
-		D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteEntity.swift; sourceTree = "<group>"; };
-		D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Gestures.swift"; sourceTree = "<group>"; };
-		D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIMD+Helpers.swift"; sourceTree = "<group>"; };
-		D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helpers.swift"; sourceTree = "<group>"; };
-		D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyNoteView.swift; sourceTree = "<group>"; };
-		D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+OverlayUI.swift"; sourceTree = "<group>"; };
-		D9AD7F522C7B5AA40006ECA7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByViewModel.swift; sourceTree = "<group>"; };
 		D9BC870B2C7B3C930072C3A2 /* FinishedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedView.swift; sourceTree = "<group>"; };
-		FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,24 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D83F0F702C7B80ED00D33029 /* standby */ = {
-			isa = PBXGroup;
-			children = (
-				D977126E2C7B11CA00B63CD9 /* StandByView.swift */,
-				D9BC87072C7B289B0072C3A2 /* StandByViewModel.swift */,
-			);
-			path = standby;
-			sourceTree = "<group>";
-		};
-		D83F0F742C7B86E200D33029 /* home */ = {
-			isa = PBXGroup;
-			children = (
-				D83F0F722C7B86A400D33029 /* HomeViewModel.swift */,
-				D97712322C7B096900B63CD9 /* HomeView.swift */,
-			);
-			path = home;
-			sourceTree = "<group>";
-		};
 		D865889A2C7A0A8C001BD835 = {
 			isa = PBXGroup;
 			children = (
@@ -166,12 +118,8 @@
 		D86588A52C7A0A8C001BD835 /* fun app */ = {
 			isa = PBXGroup;
 			children = (
-				FFC3EAF82C7F511B008D4BC3 /* Game */,
-				D83F0F742C7B86E200D33029 /* home */,
-				D83F0F702C7B80ED00D33029 /* standby */,
 				D88576782C7B7E0C00AFF4C3 /* debug */,
 				D95B6A712C7B5D7A0047D052 /* fun-app-Info.plist */,
-				D9AD7F3A2C7B596B0006ECA7 /* AR */,
 				D86588D22C7AFA29001BD835 /* GoogleService-Info.plist */,
 				D86588A62C7A0A8C001BD835 /* fun_appApp.swift */,
 				D86588AC2C7A0A8C001BD835 /* Assets.xcassets */,
@@ -217,71 +165,6 @@
 				D8A7E9372C7B29F900162EAE /* DebugViewModel.swift */,
 			);
 			path = debug;
-			sourceTree = "<group>";
-		};
-		D9AD7F3A2C7B596B0006ECA7 /* AR */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F4B2C7B5A470006ECA7 /* Views */,
-				D9AD7F462C7B5A060006ECA7 /* Utilities */,
-				D9AD7F432C7B59E10006ECA7 /* Gestures */,
-				D9AD7F402C7B59C30006ECA7 /* Entities */,
-				D9AD7F3D2C7B598F0006ECA7 /* Components */,
-				D9AD7F3B2C7B597E0006ECA7 /* ARViewController.swift */,
-			);
-			path = AR;
-			sourceTree = "<group>";
-		};
-		D9AD7F3D2C7B598F0006ECA7 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F3E2C7B59B00006ECA7 /* ScreenSpaceComponent.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		D9AD7F402C7B59C30006ECA7 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F412C7B59D20006ECA7 /* StickyNoteEntity.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		D9AD7F432C7B59E10006ECA7 /* Gestures */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F442C7B59F40006ECA7 /* ViewController+Gestures.swift */,
-			);
-			path = Gestures;
-			sourceTree = "<group>";
-		};
-		D9AD7F462C7B5A060006ECA7 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F472C7B5A1D0006ECA7 /* SIMD+Helpers.swift */,
-				D9AD7F492C7B5A3B0006ECA7 /* UIView+Helpers.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		D9AD7F4B2C7B5A470006ECA7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D9AD7F4C2C7B5A5B0006ECA7 /* GradientView.swift */,
-				D9AD7F4E2C7B5A6A0006ECA7 /* StickyNoteView.swift */,
-				D9AD7F502C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FFC3EAF82C7F511B008D4BC3 /* Game */ = {
-			isa = PBXGroup;
-			children = (
-				FFC3EAF92C7F512A008D4BC3 /* GameViewModel.swift */,
-				D9AD7F522C7B5AA40006ECA7 /* GameView.swift */,
-			);
-			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,29 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9AD7F482C7B5A1D0006ECA7 /* SIMD+Helpers.swift in Sources */,
 				D8A7E9382C7B29F900162EAE /* DebugViewModel.swift in Sources */,
 				D83F0F762C7B875E00D33029 /* FInishedViewModel.swift in Sources */,
-				D9AD7F422C7B59D20006ECA7 /* StickyNoteEntity.swift in Sources */,
-				D9AD7F4D2C7B5A5B0006ECA7 /* GradientView.swift in Sources */,
 				D86588DC2C7AFE3F001BD835 /* Repository.swift in Sources */,
-				D9AD7F4A2C7B5A3B0006ECA7 /* UIView+Helpers.swift in Sources */,
-				D9AD7F3F2C7B59B00006ECA7 /* ScreenSpaceComponent.swift in Sources */,
 				D8A7E9362C7B29BC00162EAE /* DebugView.swift in Sources */,
-				FFC3EAFA2C7F512D008D4BC3 /* GameViewModel.swift in Sources */,
-				D977126F2C7B11CB00B63CD9 /* StandByView.swift in Sources */,
 				D9BC870C2C7B3C930072C3A2 /* FinishedView.swift in Sources */,
 				D885767C2C7B7E4500AFF4C3 /* AddItemViewModel.swift in Sources */,
-				D97712332C7B096900B63CD9 /* HomeView.swift in Sources */,
-				D9AD7F452C7B59F40006ECA7 /* ViewController+Gestures.swift in Sources */,
-				D9AD7F532C7B5AA40006ECA7 /* GameView.swift in Sources */,
-				D9BC87082C7B289B0072C3A2 /* StandByViewModel.swift in Sources */,
-				D9AD7F4F2C7B5A6A0006ECA7 /* StickyNoteView.swift in Sources */,
-				D83F0F732C7B86A400D33029 /* HomeViewModel.swift in Sources */,
-				D9AD7F512C7B5A7C0006ECA7 /* ViewController+OverlayUI.swift in Sources */,
 				D885767B2C7B7E4500AFF4C3 /* AddItemView.swift in Sources */,
 				D86588A72C7A0A8C001BD835 /* fun_appApp.swift in Sources */,
-				D9AD7F3C2C7B597E0006ECA7 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
