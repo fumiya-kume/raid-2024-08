@@ -12,6 +12,8 @@ struct ItemListView: View {
     @ObservedObject var viewModel: ItemListViewModel = ItemListViewModel()
     
     @State var showModalSheet = false
+    @State var showGameOver = false
+    @State var showSafe = false
     
     var body: some View {
         VStack{
@@ -37,19 +39,20 @@ struct ItemListView: View {
                             Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit).padding()
                             Text(item.name)
                             Button("購入！"){
+                                showModalSheet = false
                                 viewModel.onItemSelect(item: item)
                             }
                         }).presentationDetents([.medium])
                     })
-                    .fullScreenCover(isPresented: $viewModel.isGameOver) {
-                        GameOverView()
-                    }
-                    .fullScreenCover(isPresented: $viewModel.isSafe) {
-                        SafeView(isActive: $viewModel.isSafe)
-                    }
                 }
             })
         }.padding()
+            .fullScreenCover(isPresented: $viewModel.isGameOver) {
+                GameOverView()
+            }
+            .fullScreenCover(isPresented: $viewModel.isSafe) {
+                SafeView(isActive: $viewModel.isSafe)
+            }
     }
 }
 

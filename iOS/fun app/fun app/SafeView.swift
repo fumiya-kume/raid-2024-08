@@ -9,14 +9,16 @@ import SwiftUI
 
 struct SafeView: View {
     @Binding var isActive: Bool
-
+    
     var body: some View {
-        Text("Safe")
-        Button(action: {
-            isActive = false
-        }) {
-            Image("next turn")
+        VStack{
+            Image("clear").resizable().aspectRatio(contentMode: .fit)
+            Image("next turn").resizable().aspectRatio(contentMode: .fit)
         }
+        .onTapGesture {
+            isActive = false
+        }
+        .padding()
     }
 }
 
