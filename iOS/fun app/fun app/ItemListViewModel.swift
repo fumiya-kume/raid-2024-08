@@ -24,4 +24,5 @@ struct Item : Identifiable, Codable {
     let id:String
     let name: String
     let price: Int
+    let thumbnail: String
 }
