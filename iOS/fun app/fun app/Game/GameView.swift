@@ -11,7 +11,7 @@ struct GameView: View {
             switch(gameState){
                 // Shwo the each UI based on the game state
             case .Ready:
-                ARView(viewModel: viewModel)
+                StandByView()
             case .Game:
                 ARView(viewModel: viewModel)
             case .Result:
