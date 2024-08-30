@@ -18,6 +18,21 @@ struct DebugView: View {
                 List{
                     Section(header: Text("link集")){
                         NavigationLink{
+                            TopView()
+                        }label:{
+                            Text("Top")
+                        }
+                        NavigationLink{
+                            SafeView()
+                        }label:{
+                            Text("Safe")
+                        }
+                        NavigationLink{
+                            GameOverView()
+                        }label:{
+                            Text("GameOver")
+                        }
+                        NavigationLink{
                             FinishedView()
                         }label:{
                             Text("Finishd")
