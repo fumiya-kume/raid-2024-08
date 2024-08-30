@@ -38,8 +38,12 @@ class DebugViewModel: ObservableObject{
         repository.itemDelete(item: item)
     }
     
-    func onSessionDelete() {
-        
+    func onUserDeleteAll(){
+        repository.userListener{
+            $0.forEach{
+                self.repository.userDelete(user: $0)
+            }
+        }
     }
 }
 

@@ -38,6 +38,11 @@ struct DebugView: View {
                             Text("Finishd")
                         }
                     }
+                    
+                    Section(header: Text("Debug command")){
+                        Button("remove all users", action: viewModel.onUserDeleteAll)
+                    }
+                    
                     Section(header: Text("Item Collection")){
                         ForEach(viewModel.itemList){ user in
                             HStack{
