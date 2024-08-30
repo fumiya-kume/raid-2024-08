@@ -13,8 +13,10 @@ struct TopView: View {
             Image("title BG").resizable()
             VStack{
                 Image("title").resizable().aspectRatio(contentMode: .fit).padding()
-                Image("start").resizable().aspectRatio(contentMode: .fit)
-                    .frame(alignment: .center).padding()
+                NavigationLink(destination: ItemListView()) {
+                    Image("start").resizable().aspectRatio(contentMode: .fit)
+                        .frame(alignment: .center).padding()
+                }
             }
         }
     }
