@@ -20,8 +20,9 @@ struct HomeView: View {
             viewModel.addUser(name: name)
             standByFlag.toggle()
         } label: {
-            Text("Stand By")
+            Text("READY 🚀")
                 .padding()
+                .padding(.horizontal, 20)
                 .background(Color.blue)
                 .foregroundColor(.white)
                 .cornerRadius(8)
