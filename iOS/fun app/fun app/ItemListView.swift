@@ -11,6 +11,8 @@ struct ItemListView: View {
     
     @ObservedObject var viewModel: ItemListViewModel = ItemListViewModel()
     
+    @State var showModalSheet = false
+    
     var body: some View {
         VStack{
             Text("予算")
@@ -29,6 +31,18 @@ struct ItemListView: View {
                     }.onTapGesture {
                         
                     }
+                    .onTapGesture {
+                        showModalSheet = true
+                    }
+                    .sheet(isPresented: $showModalSheet, content: {
+                        VStack(content: {
+                            Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit).padding()
+                            Text(item.name)
+                            Button("購入！"){
+                                
+                            }
+                        }).presentationDetents([.medium])
+                    })
                 }
             })
         }.padding()
