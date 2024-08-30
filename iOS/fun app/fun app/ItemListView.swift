@@ -13,19 +13,20 @@ struct ItemListView: View {
     
     var body: some View {
         Text("目標: 100万円！")
-        List{
-            ForEach(viewModel.items){ item in
-                if(!viewModel.selecteditems.contains{
-                    $0.id == item.id
-                }){
-                    Text(item.name)
-                        .onTapGesture {
-                            viewModel.onItemSelect(item: item)
-                        }
+        ScrollView{
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 80, maximum: 200))], content: {
+                ForEach(viewModel.items.filter{ item in
+                    !viewModel.selecteditems.contains{
+                        $0.id == item.id
+                    }
+                }){item in
+                    VStack{
+                        Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit)
+                        Text(item.name).font(.caption).lineLimit(1).allowsTightening(true)
+                    }
                 }
-            }
+            })
         }
-        
     }
 }
 
