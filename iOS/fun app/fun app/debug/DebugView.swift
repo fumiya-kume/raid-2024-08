@@ -28,7 +28,7 @@ struct DebugView: View {
                             Text("Safe")
                         }
                         NavigationLink{
-                            GameOverView()
+                            GameOverView(totalPrice: .constant(1000000))
                         }label:{
                             Text("GameOver")
                         }

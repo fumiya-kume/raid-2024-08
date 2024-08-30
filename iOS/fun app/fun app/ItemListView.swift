@@ -52,7 +52,7 @@ struct ItemListView: View {
                         .presentationDetents([.medium])
                     }
                     .fullScreenCover(isPresented: $viewModel.isGameOver) {
-                        GameOverView()
+                        GameOverView(totalPrice: $viewModel.totalPrice)
                     }
                     .fullScreenCover(isPresented: $viewModel.isSafe) {
                         SafeView(isActive: $viewModel.isSafe)

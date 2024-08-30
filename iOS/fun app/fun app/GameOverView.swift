@@ -9,19 +9,30 @@ import SwiftUI
 
 struct GameOverView: View {
     @Environment(\.presentationMode) var presentation
+    @Binding var totalPrice: Int
     
     var body: some View {
-        ZStack{
-            Image("game over").resizable().aspectRatio(contentMode: .fit).padding()
-            NavigationLink(destination: TopView()) {
-                Image("home").resizable().aspectRatio(contentMode: .fit)
-                    .frame(alignment: .center).padding()
+        NavigationView {
+            ZStack {
+                Text("\(String.localizedStringWithFormat("%d", totalPrice))円")
+                    .font(.system(size: 50))
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.bottom, UIScreen.main.bounds.height / 4)
+                VStack {
+                    Image("game over").resizable().aspectRatio(contentMode: .fit).padding()
+                    NavigationLink(destination: TopView()) {
+                        Image("home").resizable().aspectRatio(contentMode: .fit)
+                            .frame(alignment: .center).padding()
+                    }
+                }
             }
+            .background(Color.black)
         }
-        .background(.black)
     }
 }
 
 #Preview {
-    GameOverView()
+    GameOverView(totalPrice: .constant(1000))
 }
