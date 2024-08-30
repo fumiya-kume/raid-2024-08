@@ -26,6 +26,8 @@ struct ItemListView: View {
                     VStack{
                         Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit)
                         Text(item.name).font(.caption).lineLimit(1).allowsTightening(true)
+                    }.onTapGesture {
+                        
                     }
                 }
             })
