@@ -12,6 +12,7 @@ struct ItemListView: View {
     @ObservedObject var viewModel: ItemListViewModel = ItemListViewModel()
     
     var body: some View {
+        Text("目標: 100万円！")
         List{
             ForEach(viewModel.items){ item in
                 if(!viewModel.selecteditems.contains{
