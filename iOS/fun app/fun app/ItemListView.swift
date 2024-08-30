@@ -13,23 +13,32 @@ struct ItemListView: View {
     
     var body: some View {
         Text("目標: 100万円！")
-        List{
-            ForEach(viewModel.items){ item in
-                if(!viewModel.selecteditems.contains{
-                    $0.id == item.id
-                }){
-                    Text(item.name)
-                        .onTapGesture {
-                            viewModel.onItemSelect(item: item)
-                        }
+        List {
+            ForEach(viewModel.items) { item in
+                ForEach(viewModel.items.filter{ item in
+                    !viewModel.selecteditems.contains{
+                        $0.id == item.id
+                    }
+                }){ item in
+                    Button(action: {
+                        let result = viewModel.onItemSelect(item: item)
+                        viewModel.isGameOver = result
+                        viewModel.isSafe = !result
+                    }) {
+                        Text(item.name) // itemの表示内容に応じて変更
+                    }
                 }
             }
         }
-        
+        .fullScreenCover(isPresented: $viewModel.isGameOver) {
+            GameOverView()
+        }
+        .fullScreenCover(isPresented: $viewModel.isSafe) {
+            SafeView()
+        }
     }
 }
 
 #Preview {
     ItemListView()
 }
-
