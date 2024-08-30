@@ -29,6 +29,6 @@ struct ItemListView: View {
 }
 
 #Preview {
-    FinishedView()
+    ItemListView()
 }
 
