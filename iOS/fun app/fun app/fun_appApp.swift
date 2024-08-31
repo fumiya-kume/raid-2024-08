@@ -22,7 +22,7 @@ struct fun_appApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DebugView()
+            ItemListView()
         }
     }
 }
