@@ -11,6 +11,10 @@ import Combine
 class Repository {
     func loadItemData() -> [Item] {
         return [
+            Item(id: UUID().uuidString, name: "iPhone 6 Plus", price: 79800, thumbnail: "iPhone 6 Plus"),
+            Item(id: UUID().uuidString, name: "iPhone 6s", price: 86800, thumbnail: "iPhone 6s"),
+            Item(id: UUID().uuidString, name: "iPhone 6s Plus", price: 98800, thumbnail: "iPhone 6s Plus"),
+            Item(id: UUID().uuidString, name: "iPhone SE(第1世代)", price: 52800, thumbnail: "iPhone SE(第1世代)"),
             Item(id: UUID().uuidString, name: "iPhone 3G", price: 23040, thumbnail: "iPhone 3G"),
             Item(id: UUID().uuidString, name: "iPhone 15 Pro Max", price: 189800, thumbnail: "iPhone 15 Pro Max"),
             Item(id: UUID().uuidString, name: "クラタス スターターキット", price: 120000000, thumbnail: "クラタス スターターキット"),
