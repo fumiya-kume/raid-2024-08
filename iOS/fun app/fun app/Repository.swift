@@ -12,6 +12,7 @@ class Repository {
     func loadItemData() -> [Item] {
         return [
             Item(id: UUID().uuidString, name: "iPhone 6 Plus", price: 79800, thumbnail: "iPhone 6 Plus"),
+            Item(id: UUID().uuidString, name: "Apple Watch S9", price: 121800, thumbnail: "Apple Watch S9"),
             Item(id: UUID().uuidString, name: "iPhone 6s", price: 86800, thumbnail: "iPhone 6s"),
             Item(id: UUID().uuidString, name: "iPhone 6s Plus", price: 98800, thumbnail: "iPhone 6s Plus"),
             Item(id: UUID().uuidString, name: "iPhone SE(第1世代)", price: 52800, thumbnail: "iPhone SE(第1世代)"),
