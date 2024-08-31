@@ -9,13 +9,14 @@ import SwiftUI
 
 struct TopView: View {
     var body: some View {
-        ZStack{
-            Image("title BG").resizable()
-            VStack{
-                Image("title").resizable().aspectRatio(contentMode: .fit).padding()
-                NavigationLink(destination: ItemListView()) {
+        NavigationLink(destination: ItemListView()) {
+            ZStack{
+                Image("title BG").resizable()
+                VStack{
+                    Image("title").resizable().aspectRatio(contentMode: .fit).padding()
                     Image("start").resizable().aspectRatio(contentMode: .fit)
-                        .frame(alignment: .center).padding()
+                        .padding()
+                        .frame(alignment: .center)
                 }
             }
         }
