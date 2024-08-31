@@ -26,7 +26,7 @@ class Repository {
             Item(id: UUID().uuidString, name: "テトラポット", price: 100000, thumbnail: "テトラポット"),
             Item(id: UUID().uuidString, name: "アーロンチェア", price: 255200, thumbnail: "アーロンチェア"),
             Item(id: UUID().uuidString, name: "四季報", price: 2600, thumbnail: "四季報"),
-            Item(id: UUID().uuidString, name: "Vision Pro", price: 599800, thumbnail: "Vision Pro"),
+            Item(id: UUID().uuidString, name: "VisionPro", price: 599800, thumbnail: "VisionPro"),
         ]
 
     }
