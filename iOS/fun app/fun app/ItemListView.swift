@@ -14,6 +14,7 @@ struct ItemListView: View {
     @State var showModalSheet = false
     @State var showGameOver = false
     @State var showSafe = false
+    @State private var selection = false
     
     var body: some View {
         VStack{
@@ -31,7 +32,7 @@ struct ItemListView: View {
                     }
                 }){item in
                     Button {
-//                        showModalSheet = true
+                        //                        showModalSheet = true
                         selectedItem = item
                         print(item.name, "クリック!")
                     } label: {
@@ -45,9 +46,10 @@ struct ItemListView: View {
                             Image(item.thumbnail).resizable().aspectRatio(contentMode: .fit).padding()
                             Text(item.name)
                             Button("購入！") {
+                                selection.toggle()
                                 selectedItem = nil
                                 viewModel.onItemSelect(item: item)
-                            }
+                            }.sensoryFeedback(.selection, trigger: selection)
                         }
                         .presentationDetents([.medium])
                     }
