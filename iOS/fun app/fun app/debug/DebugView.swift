@@ -28,7 +28,7 @@ struct DebugView: View {
                             Text("Safe")
                         }
                         NavigationLink{
-                            GameOverView(totalPrice: .constant(1000000))
+                            GameOverView(totalPrice: .constant(1000000), selectedItems: .constant([Item(id: UUID().uuidString, name: "iPhone 3G", price: 23040, thumbnail: "iPhone 3G")]))
                         }label:{
                             Text("GameOver")
                         }

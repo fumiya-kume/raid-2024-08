@@ -10,18 +10,25 @@ import SwiftUI
 struct GameOverView: View {
     @Environment(\.presentationMode) var presentation
     @Binding var totalPrice: Int
+    @Binding var selectedItems: [Item]
     
     var body: some View {
         NavigationView {
             ZStack {
-                Text("\(String.localizedStringWithFormat("%d", totalPrice))円")
-                    .font(.system(size: 50))
-                    .fontWeight(.bold)
-                    .foregroundColor(.red)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(.bottom, UIScreen.main.bounds.height / 4)
+                VStack {
+                    Text("\(String.localizedStringWithFormat("%d", totalPrice))円")
+                        .font(.system(size: 50))
+                        .fontWeight(.bold)
+                        .foregroundColor(.red)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .padding(.bottom, UIScreen.main.bounds.height / 4)
+
+                }
                 VStack {
                     Image("game over").resizable().aspectRatio(contentMode: .fit).padding()
+                    ForEach(selectedItems) { item in
+                        Text("\(item.name): \(item.price)").foregroundColor(.white)
+                    }
                     NavigationLink(destination: TopView()) {
                         Image("home").resizable().aspectRatio(contentMode: .fit)
                             .frame(alignment: .center).padding()
@@ -34,5 +41,5 @@ struct GameOverView: View {
 }
 
 #Preview {
-    GameOverView(totalPrice: .constant(1000))
+    GameOverView(totalPrice: .constant(1000000), selectedItems: .constant([Item(id: UUID().uuidString, name: "iPhone 3G", price: 23040, thumbnail: "iPhone 3G")]))
 }
