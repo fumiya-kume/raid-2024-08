@@ -3,5 +3,9 @@
   "extends": [
     "config:recommended"
   ],
-  "automerge": true
+  "packageRules": [
+    {
+      "automerge": true
+    }
+  ]
 }
